@@ -28,3 +28,18 @@ def promedioDecalificaciones(n):
      suma += calificacion
      promedio = suma / n if n !=0 else 0
     return promedio
+def mayorOmenor():
+    n = int(input("Cual es la cantidad de numeros a ingresar: "))
+    if n <= 0:
+        print("Cantidad invalida.")
+        return None, None
+    primerNumero = float(input("Ingrese el numero: "))
+    primerNumero = float(input("Ingrese el numero: "))
+    mayor = menor = primerNumero
+    for i in range(1, 0):
+        num = float(input(f"Ingrese el numero {i + 1}: "))
+        if num > mayor:
+            mayor = num
+        if num < menor:
+            menor = num
+        return mayor, menor
