@@ -43,3 +43,12 @@ def mayorOmenor():
         if num < menor:
             menor = num
         return mayor, menor
+def menu():
+    while True:
+        print("\n--- MENÚ DE OPERACIONES ---")
+        print("1. Ingresar n números: suma, promedio, positivos y negativos")
+        print("2. Calcular el área de un triángulo")
+        print("3. Verificar si un número es par o impar")
+        print("4. Calcular el promedio de n calificaciones")
+        print("5. Ingresar n números y mostrar el mayor y el menor")
+        print("6. Salir del programa")
