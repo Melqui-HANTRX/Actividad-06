@@ -3,7 +3,9 @@ def ingresar_numeros(n):
     numeros = []
     for i in range(n):
         suma = float(input(f"Ingrese el numero: {i+1}"))
-        numeros
+        numeros.append(suma)
+    return numeros
+
 
 
 
