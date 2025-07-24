@@ -52,3 +52,34 @@ def menu():
         print("4. Calcular el promedio de n calificaciones")
         print("5. Ingresar n números y mostrar el mayor y el menor")
         print("6. Salir del programa")
+        opcion = input("Seleccione una opcion 1-6")
+
+        match opcion:
+         case "1":
+            suma, prom, pos, neg = ingresar_contar()
+            print(f"Suma total: {suma}")
+            print(f"Promedio: {prom:.2f}")
+            print(f"Cantidad de numeros negativos: {neg}")
+            print(f"cantidad de numeros positivos: {pos}")
+         case "2":
+           base = float(input("Ingrese la base del triangulo: "))
+           altura = float(input("Ingrese la altura del triangulo: "))
+           area = triangular(base,altura)
+           print(f"Area del triangulo: {area:.2f}")
+         case "3":
+             numero = int(input("Ingrese un numero: "))
+             resultado = numerParoInpar(numero)
+             print(f"El numero {numero} es {resultado}")
+         case "4":
+             promedio = promedioDecalificaciones()
+             print(f"El promedio de las calificaciones es {promedio:.2f}")
+         case "5":
+             mayor, menor = mayorOmenor()
+             if mayor is not None:
+                 print(f"El numero mayor es {mayor:.2f}")
+                 print(f"El numero menor es {menor:.2f}")
+         case "6":
+             print("Gracias por visitarnos, saliendo del programa...")
+
+
+
